@@ -1,20 +1,32 @@
 package com.julienvey.trello.impl.domaininternal;
 
 public class Label {
-    private String value;
+    // private String value;
+    private String color;
+    private String name;
 
     public Label() {
     }
 
     public Label(String value) {
-        this.value = value;
+      String[] parts = value.split(",", 2);
+      color = parts[0].trim();
+      if(parts.length>1) name = parts[1].trim();
     }
 
-    public String getValue() {
-        return value;
+    public String getColor() {
+      return color;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public String getName() {
+      return name;
+    }
+
+    public void setColor(String color) {
+      this.color = color;
+    }
+
+    public void setName(String name){
+      this.name = name;
     }
 }
