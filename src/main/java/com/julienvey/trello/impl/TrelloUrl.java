@@ -15,6 +15,7 @@ public class TrelloUrl {
     public static final String GET_BOARD_MEMBERS = "/boards/{boardId}/members?";
     public static final String GET_BOARD_MEMBER_CARDS = "/boards/{boardId}/members/{memberId}/cards?";
     public static final String GET_BOARD_LISTS = "/boards/{boardId}/lists?";
+    public static final String GET_BOARD_LABELS = "/boards/{boardId}/labels?";
     public static final String GET_BOARD_MEMBERS_INVITED = "/boards/{boardId}/membersInvited?";
     public static final String GET_BOARD_MYPREFS = "/boards/{boardId}/myPrefs?";
     public static final String GET_BOARD_ORGANIZATION = "/boards/{boardId}/organization?";
